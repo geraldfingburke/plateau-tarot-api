@@ -8,7 +8,7 @@ The basic query is:
 
 `https://indiealchemy.com/apis/plateautarot/`
 
-This will get you all 78 cards in a JSON array.
+This will get you all 78 cards in a JSON array. They will be shuffled using Fisher-Yates
 
 You can use GET to specify:
 
