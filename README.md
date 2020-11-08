@@ -48,7 +48,7 @@ And pull them from there. You can also visit:
 
 Which was our source for the images
 
-#Credits
+# Credits
 
 All card details were written and prepared by Josh Petty @ BrainJar Games
 
@@ -56,12 +56,12 @@ Images were provided by Luciella Elisabeth Scarlett (this is not an endorsement 
 
 I wrote the icky PHP stuff.
 
-#License
+# License
 
 We're using the 'unlicense' which is functionally CC0 or public domain, but also suggests that I'm not a fan of copyright in general. 
 Do what you want with it. Credit me if you like.
 
-#Contributing
+# Contributing
 
 This is pretty barebones, but I'm not really sure what all the things you might need to do with a tarot deck api are.
 If you think of something and want to add it yourself, make a PR.
