@@ -8,7 +8,7 @@ $cards = $file->cards;
 $iterator = 1;
 // Attach image url to each card
 foreach($cards as $card) {
-  $card->imageURL = "https://indiealchemy.com/apis/plateautarot/images/".$card->name.".jpg";
+  $card->imageURL = "https://geraldburke.com/apis/plateautarot/images/".$card->name.".jpg";
   $card->id = $iterator;
   $iterator++;
 }

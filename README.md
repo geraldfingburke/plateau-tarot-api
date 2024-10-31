@@ -6,7 +6,7 @@ A simple API for accessiu-tarong a basic tarot deck
 
 The basic query is:
 
-`https://indiealchemy.com/apis/plateautarot/`
+`https://geraldburke.com/apis/plateautarot/`
 
 This will get you all 78 cards in a JSON array. They will be shuffled using Fisher-Yates
 
@@ -19,7 +19,7 @@ suit: string (cups, wands, swords, pentacles)
 
 A query of :
 
-`https://indiealchemy.com/apis/plateautarot/?count=2&arcana=major`
+`https://geraldburke.com/apis/plateautarot/?count=2&arcana=major`
 
 Will yield two cards of the major arcana.
 
@@ -33,14 +33,14 @@ Will yield two cards of the major arcana.
 "description":"This card represents a practical minded person who is good with their finances. They have a talent for making money and the ambition to use it.",
 "rank":"Page",
 "symbols":"Wealth. Status. Youth.",
-"imageURL":"https:\/\/indiealchemy.com\/apis\/plateautarot\/images\/Page of Pentacles.jpg",
+"imageURL":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/Page of Pentacles.jpg",
 "id":75
 }]}
 ```
 
 imageURL points to a directory of card images on our server. If you need local copies, just feel free to visit:
 
-`https://indiealchemy.com/apis/plateautarot/images`
+`https://geraldburke.com/apis/plateautarot/images`
 
 And pull them from there. You can also visit:
 
