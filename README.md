@@ -1,6 +1,6 @@
 # Plateau Tarot API
 
-A simple API for accessiu-tarong a basic tarot deck
+A simple API for accessing a basic tarot deck
 
 # Instructions
 
