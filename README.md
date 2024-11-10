@@ -26,16 +26,32 @@ Will yield two cards of the major arcana.
 # Structure
 
 ```
-{"cards":[{
-"name":"Page of Pentacles",
-"arcana":"Minor",
-"suit":"Pentacles",
-"description":"This card represents a practical minded person who is good with their finances. They have a talent for making money and the ambition to use it.",
-"rank":"Page",
-"symbols":"Wealth. Status. Youth.",
-"imageURL":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/Page of Pentacles.jpg",
-"id":75
-}]}
+{
+    "cards":
+    [
+        {
+            "name":"The Devil",
+            "arcana":"Major",
+            "suit":"none",
+            "description":"Feelings of entrapment surround you. You are focusing so much on the goal you've neglected everything else.",
+            "rank":"15",
+            "symbols":"Sex. Restrictions. Addiction.",
+            "imageURL":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/The Devil.jpg",
+            "cardBack":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/Card Back.jpg","id":16
+        },
+        {
+            "name":"Justice",
+            "arcana":"Major",
+            "suit":"none",
+            "description":"A symbol of the scales. All things are measured and accountable. Legal matters are implied.",
+            "rank":"11",
+            "symbols":"Balance. Estimation. Debt.",
+            "imageURL":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/Justice.jpg",
+            "cardBack":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/Card Back.jpg",
+            "id":12
+        }
+    ]
+}
 ```
 
 imageURL points to a directory of card images on our server. If you need local copies, just feel free to visit:
