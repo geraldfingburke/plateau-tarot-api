@@ -9,6 +9,7 @@ $iterator = 1;
 // Attach image url to each card
 foreach($cards as $card) {
   $card->imageURL = "https://geraldburke.com/apis/plateautarot/images/".$card->name.".jpg";
+  $card->cardBack = "https://geraldburke.com/apis/plateautarot/images/Card Back.jpg";
   $card->id = $iterator;
   $iterator++;
 }
