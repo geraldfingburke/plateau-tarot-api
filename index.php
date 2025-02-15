@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=utf-8");
 $file = json_decode(file_get_contents("json/tarot_card_data.json"));
 
 $cards = $file->cards;
