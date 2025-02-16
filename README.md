@@ -16,12 +16,23 @@ id: int (1-78)
 count: int (1-78)
 arcana: string (major, minor)
 suit: string (cups, wands, swords, pentacles)
+seed: int (0-getrandmax())
 
 A query of :
 
 `https://geraldburke.com/apis/plateautarot/?count=2&arcana=major`
 
 Will yield two cards of the major arcana.
+
+# Seeding
+
+Every result will yield the seed used in the shuffle aglorith. If you want to get the same shuffle again, save the returned seed and use it in any following requests.
+
+The seed is generated using rand() with no parameters, so it can carry a value from zero to the value of getrandmax().
+
+By default getrandmax() will return the max value of a 32-bit signed integer, which would be 2^31-1 or 2,147,483,647.
+
+I did this in the interest of flexibility, considering the number of possible shuffles is !78, but if it would be easier to use a number with a fixed number of digits, open an issue.
 
 # Structure
 
@@ -49,7 +60,8 @@ Will yield two cards of the major arcana.
             "imageURL":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/Justice.jpg",
             "cardBack":"https:\/\/geraldburke.com\/apis\/plateautarot\/images\/Card Back.jpg",
             "id":12
-        }
+        },
+        "seed":739458986
     ]
 }
 ```
