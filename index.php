@@ -3,6 +3,7 @@ header("Access-Control-Allow-Origin: *");
 $file = json_decode(file_get_contents("json/tarot_card_data.json"));
 
 $cards = $file->cards;
+$seed;
 
 // Iterator for card id's
 $iterator = 1;
@@ -14,8 +15,16 @@ foreach($cards as $card) {
   $iterator++;
 }
 
+if (isset($_GET["seed"])) {
+   $seed = $_GET["seed"];
+}
+else {
+   $seed = rand();
+}
+
 // Apply Fisher-Yates shuffle to deck
 for($i = 0; $i < sizeof($cards); ++$i) {
+   srand($seed);
    $r = rand(0, $i);
    $tmp = $cards[$i];
    $cards[$i] = $cards[$r];
@@ -82,6 +91,7 @@ if (isset($_GET["count"])) {
     }
 }
 
+$file->seed = $seed;
 $file->cards = $cards;
 
 echo json_encode($file);
